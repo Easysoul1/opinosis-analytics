@@ -87,19 +87,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 20px; /* Add spacing above the section */
+  margin-top: 20px; 
 }
 
 .book-section img {
   max-width: 150px;
-  margin-bottom: 10px; /* Add spacing below the image */
+  margin-bottom: 10px;
 }
 
 .book-section .book-description {
-  margin-top: 10px; /* Ensure spacing between the image and text */
-  color: #fff; /* Ensure text is visible on dark backgrounds */
+  margin-top: 10px; 
+  color: #fff; 
   font-size: 1rem;
-  line-height: 1.5; /* Improve readability */
+  line-height: 1.5;
 }
 
 /* Scroll-Up Button */
