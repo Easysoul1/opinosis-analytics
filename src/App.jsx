@@ -10,6 +10,7 @@ import BookSection from './components/BookSection.jsx';
 import BusinessInsightsSection from './components/BusinessInsightsSection.jsx';
 import FormSection from './components/FormSection.jsx';
 import FAQSection from './components/FAQSection.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <BusinessInsightsSection/>
       <FormSection/>
       <FAQSection/>
+      <Footer/>
     </>
   )
 }

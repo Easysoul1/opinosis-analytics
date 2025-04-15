@@ -1,4 +1,7 @@
 import React from "react";
+import './Footer.css';
+import bookImage from '../assets/footer/the-business-case-for-AI-stacked-edited-1536x1152.png'
+import Goldman from '../assets/footer/unnamed.webp'
 
 const Footer = () => {
   return (
@@ -8,16 +11,16 @@ const Footer = () => {
         <div className="links-section">
           <h3>Consulting Links</h3>
           <ul>
-            <li>AI & Machine Learning Consulting</li>
-            <li>NLP Consulting</li>
-            <li>AI Strategy Consulting</li>
-            <li>AI Transformation Workshops</li>
+            <li><a href="#">AI & Machine Learning Consulting</a></li>
+            <li><a href="#">NLP Consulting</a></li>
+            <li><a href="#">AI Strategy Consulting</a></li>
+            <li><a href="#">AI Transformation Workshops</a></li>
           </ul>
         </div>
 
         <div className="image-section">
           <img
-            src="path-to-goldman-sachs-image.png"
+            src={Goldman} width={300}
             alt="Goldman Sachs: 10,000 Small Businesses"
           />
         </div>
@@ -33,14 +36,16 @@ const Footer = () => {
         </div>
 
         <div className="book-section">
-          <img src="path-to-book-image.png" alt="The Business Case for AI" />
+          <img src={bookImage} alt="The Business Case for AI" width={150} />
           <div className="book-description">
             <p>We've authored an international bestseller</p>
           </div>
         </div>
 
         <div className="scroll-up-button">
-          <button>&uarr;</button>
+          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            &uarr;
+          </button>
         </div>
       </div>
 
