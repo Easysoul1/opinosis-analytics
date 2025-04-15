@@ -1,0 +1,136 @@
+
+  
+  .footer {
+    background-color: #333; /* Dark gray background */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .links-section {
+    text-align: left;
+  }
+  
+  .links-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .links-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .links-section li {
+    margin-bottom: 5px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .newsletter-section {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter-section h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .newsletter-section p {
+    margin-bottom: 15px;
+  }
+  
+  .newsletter-section form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .newsletter-section form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .book-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .book-section img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .book-description p {
+    margin: 0;
+  }
+  
+  .scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .scroll-up-button button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Bottom Section Styles */
+  .bottom-section {
+    background-color: #222; /* Darker gray for the bottom section */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .bottom-section .copyright {
+    margin-bottom: 10px;
+  }
+  
+  .bottom-section .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .bottom-section .links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .bottom-section .links a:hover {
+    color: #007bff; /* Blue color on hover */
+  }

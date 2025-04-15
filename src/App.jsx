@@ -9,6 +9,7 @@ import TrustedBy from './components/TrustedBy.jsx'
 import BookSection from './components/BookSection.jsx';
 import BusinessInsightsSection from './components/BusinessInsightsSection.jsx';
 import FormSection from './components/FormSection.jsx';
+import FAQSection from './components/FAQSection.jsx';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <BookSection/>
       <BusinessInsightsSection/>
       <FormSection/>
+      <FAQSection/>
     </>
   )
 }
