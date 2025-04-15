@@ -88,6 +88,15 @@ const FormSection = () => {
             required
           >
             <option value="AI-Driven Workflow Optimization">AI-Driven Workflow Optimization</option>
+            <option value="Custom AI/LLM Development">Custom AI/LLM Development</option>
+            <option value="AI Tool Research">AI Tool Research</option>
+            <option value="AI Integration Support">AI Integration Support</option>
+            <option value="AI Use Case Selection">AI Use Case Selection</option>
+            <option value="AI Readiness Gaps Assessment">AI Readiness Gaps Assessment</option>
+            <option value="Data Analysis & Insights Extraction">Data Analysis & Insights Extraction</option>
+            <option value="AI Feasibility Assessment">AI Feasibility Assessment</option>
+            <option value="AI Model Improvement / Fine-Tuning">AI Model Improvement / Fine-Tuning</option>
+            <option value="Partnerships">Partnerships</option>
             <option value="Other">Other</option>
           </select>
         </div>
@@ -135,10 +144,7 @@ const FormSection = () => {
           <label htmlFor="isNotRobot">I'm not a robot</label>
           <span className="recaptcha-text">reCAPTCHA Privacy - Terms</span>
         </div>
-
-        <button type="submit" className="submit-btn">
-          <span>↑</span>
-        </button>
+        <button type='submit' className='submit'>Get In Touch</button>
       </form>
     </div>
   );
