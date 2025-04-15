@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./HeroSection.css";
+import "./herosection.css";
 import logo from "../assets/opinosis_logo_white_cropped-1.webp";
 import dashboardImage from "../assets/sh-hero-1024x772.webp";
 
