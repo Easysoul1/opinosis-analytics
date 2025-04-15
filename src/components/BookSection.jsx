@@ -1,6 +1,6 @@
 import React from "react";
 import "./BookSection.css";
-import Book from "../assets/the-business-case-for-AI-stacked-edited-1024x1024.png";
+import thisBook from '../assets/the-business-case-for-AI-stacked-edited-1536x1152.png'
 
 const BookSection = () => {
   return (
@@ -28,7 +28,7 @@ const BookSection = () => {
         </div>
       </div>
       <div className="book-image">
-        <img src={Book} alt="The Business Case for AI" />
+        <img src={thisBook} alt="The Business Case for AI"/>
       </div>
     </div>
   );

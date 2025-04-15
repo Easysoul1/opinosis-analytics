@@ -1,6 +1,6 @@
 import React from "react";
 import './Footer.css';
-import bookImage from '../assets/footer/resized1.png';
+import bookImage from '../assets/footer/the-business-case-for-AI-stacked-edited-1024x1024.png';
 import Goldman from '../assets/footer/unnamed.webp'
 
 const Footer = () => {
