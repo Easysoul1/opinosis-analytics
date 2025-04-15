@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+      if (window.scrollY > 50) { 
         setIsScrolled(true);
       } else {
         setIsScrolled(false);

@@ -1,122 +1,117 @@
 .form-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: #f5f5f5;
+    max-width: 900px; /* Increased width for the form */
+    margin: 50px auto; 
+    font-family: 'Georgia', serif;
+    padding: 40px 30px; 
+    background-color: #ffffff; 
+    border-radius: 10px; /* Rounded corners */
     font-family: Arial, sans-serif;
-  }
-  
-  .form-header {
-    text-align: left;
+}
+
+.form-header {
+    text-align: center; 
     margin-bottom: 30px;
-  }
-  
-  .form-header h2 {
+}
+
+.form-header h2 {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-  }
-  
-  .form-header p {
+}
+
+.form-header p {
     font-size: 16px;
     color: #666;
     line-height: 1.5;
-  }
-  
-  form {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .form-group {
+}
+
+form {
+    background-color: transparent; /* Match the section background */
+    padding: 0; /* Remove extra padding */
+}
+
+.form-group {
     margin-bottom: 20px;
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
     display: block;
     font-size: 14px;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
-  }
-  
-  .required {
+}
+
+.required {
     color: red;
-  }
-  
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Adjust padding for better usability */
     font-size: 14px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 5px;
     box-sizing: border-box;
-  }
-  
-  .form-group textarea {
+}
+
+.form-group textarea {
     height: 100px;
     resize: none;
-  }
-  
-  .form-group select {
+}
+
+.form-group select {
     appearance: none;
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"><path fill="%23333" d="M0 0h12L6 6z"/></svg>')
       no-repeat right 10px center;
     background-size: 12px;
-  }
-  
-  .captcha-container {
+}
+
+.captcha-container {
     display: flex;
     align-items: center;
-  }
-  
-  .captcha-text {
+}
+
+.captcha-text {
     margin-right: 10px;
     font-size: 14px;
     font-weight: bold;
-  }
-  
-  .checkbox-group {
+}
+
+.checkbox-group {
     display: flex;
     align-items: center;
     font-size: 14px;
-  }
-  
-  .checkbox-group input {
+}
+
+.checkbox-group input {
     width: auto;
     margin-right: 10px;
-  }
-  
-  .recaptcha-text {
+}
+
+.recaptcha-text {
     margin-left: 10px;
     font-size: 12px;
     color: #666;
-  }
-  
-  .submit-btn {
+}
+
+.submit-btn {
     background-color: #007bff;
     border: none;
-    border-radius: 4px;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    float: right;
-  }
-  
-  .submit-btn span {
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
     color: #fff;
-    font-size: 20px;
-  }
-  
-  .submit-btn:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0; /* Center the button */
+    text-align: center;
+}
+
+.submit-btn:hover {
     background-color: #0056b3;
-  }
+}
