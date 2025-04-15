@@ -1,6 +1,6 @@
 import React from "react";
 import './Footer.css';
-import bookImage from '../assets/footer/the-business-case-for-AI-stacked-edited-1536x1152.png'
+import bookImage from '../assets/footer/resized1.png';
 import Goldman from '../assets/footer/unnamed.webp'
 
 const Footer = () => {
@@ -39,6 +39,7 @@ const Footer = () => {
           <img src={bookImage} alt="The Business Case for AI" width={150} />
           <div className="book-description">
             <p>We've authored an international bestseller</p>
+            <a href="#" className="learn-more" style={{marginTop: 80, marginLeft: 10} }>LEARN MORE</a>
           </div>
         </div>
 

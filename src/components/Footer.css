@@ -84,22 +84,37 @@
 /* Book Section */
 .book-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Align image and text side by side */
   align-items: center;
-  text-align: center;
-  margin-top: 20px; 
-}
+  justify-content: center;
+  text-align: left; 
+  margin-top: 20px;
+  gap: 20px; 
+  background-color: transparent;
 
 .book-section img {
-  max-width: 150px;
-  margin-bottom: 10px;
+  max-width: 150px; /* Set a fixed width for the image */
+  height: auto;
 }
 
 .book-section .book-description {
-  margin-top: 10px; 
-  color: #fff; 
+  color: #fff;
+  font-size: 1.2rem; 
+  font-weight: bold; /* Make the text bold */
+  line-height: 1.5; /* Improve readability */
+}
+
+.book-section .learn-more {
+  margin-top: 50px; 
   font-size: 1rem;
-  line-height: 1.5;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.book-section .learn-more:hover {
+  text-decoration: underline; 
 }
 
 /* Scroll-Up Button */
