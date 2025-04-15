@@ -5,10 +5,11 @@ import dashboardImage from "../assets/sh-hero-1024x772.webp";
 
 const HeroSection = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu toggle
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) { 
+      if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -19,6 +20,10 @@ const HeroSection = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+  };
+
   return (
     <div className="hero-bg">
       <header className={`main-header ${isScrolled ? "scrolled" : ""}`}>
@@ -28,7 +33,10 @@ const HeroSection = () => {
               <img src={logo} alt="Opinosis Logo" width={200} />
             </span>
           </div>
-          <ul className="nav-links">
+          <button className="toggle-btn" onClick={toggleMenu}>
+            ☰
+          </button>
+          <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
             <li>SERVICES</li>
             <li>INDUSTRIES</li>
             <li>ABOUT</li>
@@ -49,7 +57,9 @@ const HeroSection = () => {
         <button className="expert-btn">SPEAK TO AN EXPERT →</button>
       </div>
       <div className="dashboard-images">
-        <span><img src={dashboardImage} alt="Dashboard image" width={350} /></span>
+        <span>
+          <img src={dashboardImage} alt="Dashboard image" width={350} />
+        </span>
       </div>
     </div>
   );

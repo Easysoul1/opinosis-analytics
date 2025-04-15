@@ -1,8 +1,10 @@
+/* FAQ Section */
 .faq-section {
   max-width: 800px;
   margin: 50px auto;
   font-family: 'Georgia', serif;
   text-align: left;
+  padding: 0 20px; /* Add padding for smaller screens */
 }
 
 .faq-section h2 {
@@ -13,10 +15,12 @@
   text-align: center;
 }
 
+/* FAQ List */
 .faq-list {
   border-top: 1px solid #ddd;
 }
 
+/* FAQ Item */
 .faq-item {
   border-bottom: 1px solid #ddd;
   padding: 20px 20px; /* Add padding for better spacing */
@@ -28,6 +32,7 @@
   background-color: #f9f9f9;
 }
 
+/* FAQ Question */
 .faq-question {
   display: flex;
   justify-content: space-between;
@@ -48,6 +53,7 @@
   transform: rotate(90deg); /* Rotate arrow when active */
 }
 
+/* FAQ Answer */
 .faq-answer {
   margin-top: 15px; /* Add spacing above the answer */
   font-size: 1rem;
@@ -70,4 +76,53 @@
 
 .faq-item.active .faq-question {
   color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 0 15px; /* Reduce padding for smaller screens */
+  }
+
+  .faq-section h2 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .faq-item {
+    padding: 15px 15px; /* Reduce padding for FAQ items */
+  }
+
+  .faq-question {
+    font-size: 1rem; /* Reduce question font size */
+  }
+
+  .faq-toggle {
+    font-size: 1.2rem; /* Reduce toggle icon size */
+  }
+
+  .faq-answer {
+    font-size: 0.9rem; /* Reduce answer font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section h2 {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .faq-item {
+    padding: 10px 10px; /* Further reduce padding for FAQ items */
+  }
+
+  .faq-question {
+    font-size: 0.9rem; /* Further reduce question font size */
+  }
+
+  .faq-toggle {
+    font-size: 1rem; /* Further reduce toggle icon size */
+  }
+
+  .faq-answer {
+    font-size: 0.8rem; /* Further reduce answer font size */
+  }
 }

@@ -1,133 +1,215 @@
+/* General Hero Section Styling */
 .hero-bg {
-    background: #3498db;
-    min-height: 100vh;
-    position: relative;
-    color: #fff;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    overflow: hidden;
-  }
-  
-  .main-header {
-    position: sticky; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #3498db;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, background 0.3s ease;
-  }
+  background: #3498db;
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  overflow: hidden;
+  padding: 0 20px;
+}
 
-  .main-header.scrolled {
-    position: fixed; /* Changes to fixed after scrolling */
-    background: #2980b9; /* Darker background for fixed state */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for fixed state */
-  }
+/* Header */
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #3498db;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
 
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 48px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  
-  .logo-icon {
-    font-size: 2rem;
-    margin-bottom: 40px;
-  }
-  .nav-links {
-    display: flex;
-    gap: 28px;
-    margin-top: 20px; /* Adjusted for spacing */
-    list-style: none;
-    font-size: 1.05rem;
-    font-weight: 500;
-  }
-  
-  .cta-btn {
-    background: #222;
-    color: #fff;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: background 0.2s;
-  }
-  
-  .cta-btn:hover {
-    background: #444;
-  }
+.main-header.scrolled {
+  position: fixed;
+  background: #2980b9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-  .hero-content {
-    max-width: 700px;
-    margin: 30px 0 0 120px;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* CTA Button */
+.cta-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+
+.cta-btn:hover {
+  background: #444;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 700px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 36px;
+  color: #d6eaff;
+}
+
+.expert-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 18px 38px;
+  border-radius: 33px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+
+.expert-btn:hover {
+  background: #222;
+}
+
+/* Dashboard Images */
+.dashboard-images {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.dashboard-img {
+  width: 260px;
+  height: 90px;
+  background: #222c;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 8px 32px #0003;
+}
+
+.dashboard-img-1 {
+  background: #1a2636;
+}
+
+.dashboard-img-2 {
+  background: #22304a;
+  width: 180px;
+}
+
+.dashboard-img-3 {
+  background: #2a3a56;
+  width: 220px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.8rem;
-    font-weight: 600;
-    margin-bottom: 28px;
-    line-height: 1.2;
+    font-size: 2rem;
   }
-  
+
   .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 36px;
-    color: #d6eaff;
+    font-size: 1rem;
   }
-  
-  .expert-btn {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 18px 38px;
-    border-radius: 33px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: background 0.2s;
-  }
-  
-  .expert-btn:hover {
-    background: #222;
-  }
-  
-  .dashboard-images {
-    position: absolute;
-    right: 80px;
-    top: 180px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-  
+
   .dashboard-img {
-    width: 260px;
-    height: 90px;
-    background: #222c;
-    border-radius: 12px;
-    margin-bottom: 8px;
-    box-shadow: 0 8px 32px #0003;
+    width: 200px;
+    height: 80px;
   }
-  
-  .dashboard-img-1 { background: #1a2636; }
-  .dashboard-img-2 { background: #22304a; width: 180px; margin-left: 40px; }
-  .dashboard-img-3 { background: #2a3a56; width: 220px; margin-left: 20px; }
+
+  .nav-links {
+    display: none; /* Hide links by default on smaller screens */
+    flex-direction: column;
+    gap: 10px;
+    background: #2980b9;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .toggle-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .cta-btn {
+    display: none; /* Hide CTA button on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .dashboard-img {
+    width: 180px;
+    height: 70px;
+  }
+}
